@@ -16,7 +16,7 @@ const initialState = {
         { id: 5, name: "Incoloy 800 Gasket", material: "Incoloy", unitLength: "6-12 meter", shape: "Round", price: 550 }
     ],
     selectedMaterial: "",
-    searchTerm: "", // ✅ Added searchTerm
+    searchTerm: "", 
 };
 
 const productSlice = createSlice({
@@ -32,9 +32,9 @@ const productSlice = createSlice({
             state.filteredProducts.push(action.payload);
         },
         setSelectedMaterial: (state, action) => {
-            state.selectedMaterial = action.payload.material; // ✅ Ensure correct structure
+            state.selectedMaterial = action.payload.material; 
         },
-        setSearchTerm: (state, action) => { // ✅ Added setSearchTerm
+        setSearchTerm: (state, action) => { 
             state.searchTerm = action.payload;
         },
         applyFilters: (state) => {
@@ -59,7 +59,7 @@ export const {
     setProducts,
     addProduct,
     setSelectedMaterial,
-    setSearchTerm, // ✅ Export setSearchTerm
+    setSearchTerm, 
     applyFilters,
     updateProduct,
 } = productSlice.actions;

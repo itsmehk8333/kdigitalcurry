@@ -62,7 +62,7 @@ const AddProductModal = ({ visible, onClose }) => {
 
        console.log(structuredData , "sdsf")
 
-        dispatch(addProduct(structuredData));  // ✅ Ensure Redux receives this action
+        dispatch(addProduct(structuredData));  
     });
 
     onClose();
